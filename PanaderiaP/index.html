@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PANADERIA</title>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="nombre">
+            PANADERIA LA ING
+        </div>
+    </div>
+
+    <div class="banner">
+        <h1>Pan recien horneado todos los dias</h1>
+    </div>
+    <br>
+
+    <fieldset id="nosotros">
+        <legend><h2>NOSOTROS</h2></legend>
+        <p>Somos una panaderia familiar comprometidos a vender pan de calidad y calientito para la ocasion</p>
+        <p>Usamos ingredientes frescos y tambien hacemos pedidos para cumpleaños, bodas y eventos.</p>
+    </fieldset>
+    <br>
+
+    <fieldset id="productos">
+        <legend><h2>PRODUCTOS</h2></legend>
+
+        <div class="productos">
+            <div class="producto">
+                <h3>Pan Frances</h3>
+                <p>Crujiente</p>
+                <b>Q 1.00</b>
+            </div>
+
+            <div class="producto">
+                <h3>Champurradas</h3>
+                <p>tradicional</p>
+                <b>Q 2.00</b>
+            </div>
+
+            <div class="producto">
+                <h3>Pan Galleta</h3>
+                <p>Pan suavecito</p>
+                <b>Q 3.00</b>
+            </div>
+
+            <div class="producto">
+                <h3>Pasteles</h3>
+                <p>Por encargo para toda ocasion</p>
+                <b>Desde Q 125.00</b>
+            </div>
+        </div>
+    </fieldset>
+    <br>
+
+    <fieldset id="horario">
+        <legend><h2>HORARIO</h2></legend>
+        <table>
+            <tr>
+                <th>Dia</th>
+                <th>Abre</th>
+                <th>Cierra</th>
+            </tr>
+            <tr>
+                <td>Lunes a Viernes</td>
+                <td>5:00 am</td>
+                <td>8:00 pm</td>
+            </tr>
+            <tr>
+                <td>Sabado</td>
+                <td>5:00 am</td>
+                <td>9:00 pm</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>6:00 am</td>
+                <td>1:00 pm</td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+
+    <fieldset id="pedidos">
+        <legend><h2>REALIZA TU PEDIDO</h2></legend>
+        <p><b>Direccion:</b> 4Ta Calle , Zona 1</p>
+        <p><b>Telefono:</b> 31998925</p>
+        <br>
+
+        <form>
+            <label>Nombre:</label>
+            <br>
+            <input name="nombre" type="text" id="nombre" required/>
+            <br>
+            <label>Telefono:</label>
+            <br>
+            <input name="telefono" type="text" id="telefono" required/>
+            <br>
+            <label>Producto:</label>
+            <br>
+            <select name="producto">
+                <option selected>Seleccione producto</option>
+                <option value="1">Pan Frances</option>
+                <option value="2">Champurradas</option>
+                <option value="3">Pan galleta</option>
+                <option value="4">Pasteles</option>
+            </select>
+            <br><br>
+            <label>Detalle del pedido:</label>
+            <br>
+            <textarea name="detalle" id="detalle" cols="50"></textarea>
+            <br><br>
+            <button type="submit">ENVIAR</button>
+            <button type="reset">BORRAR</button>
+        </form>
+    </fieldset>
+
+
+</body>
+</html>
